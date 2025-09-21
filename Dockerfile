@@ -4,6 +4,9 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /app
 
+# Install curl, which is needed for the health check
+RUN apt-get update && apt-get install -y curl
+
 # Copy the requirements file into the container
 COPY requirements.txt ./
 
