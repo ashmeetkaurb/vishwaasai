@@ -1,0 +1,58 @@
+/* style.css */
+
+/* --- background & font --- */
+[data-testid="stAppViewContainer"] > .main {
+    background-image: linear-gradient(45deg, #080a10, #141824);
+}
+
+/* --- hide header --- */
+[data-testid="stHeader"], footer {
+    visibility: hidden;
+    height: 0%;
+    position: relative;
+}
+
+/* --- title --- */
+h1 {
+    color: #4A90E2;
+    text-shadow: 0px 0px 10px #4A90E2;
+}
+
+/* --- button --- */
+[data-testid="stButton"] button {
+    background-color: transparent;
+    border: 2px solid #4A90E2;
+    color: #4A90E2;
+    transition: all 0.2s ease-in-out;
+}
+
+[data-testid="stButton"] button:hover {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border-color: #4A90E2;
+    box-shadow: 0px 0px 15px #4A90E2;
+}
+
+/* --- res. cards --- */
+.finding-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(74, 144, 226, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.finding-card h5 {
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.finding-card blockquote {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #4A90E2;
+    padding: 10px;
+    margin-left: 0;
+}
